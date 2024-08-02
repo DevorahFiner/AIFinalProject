@@ -1,15 +1,3 @@
-import subprocess
-import sys
-
-# Function to install a library
-def install(package):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-# Install necessary libraries
-install("streamlit")
-install("transformers")
-install("gtts")
-
 # Importing libraries after installation
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
